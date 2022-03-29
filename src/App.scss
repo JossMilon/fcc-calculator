@@ -1,0 +1,73 @@
+#root {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 400px;
+    background-color: darkslategray;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 12px;
+    .display {
+        background-color: lightgray;
+        width: calc(100% - 20px);
+        height: 50px;
+        display: flex;
+        align-items: center;
+        font-size: 45px;
+        padding: 0 10px;
+    }
+    .bodyCalc {
+        display: flex;
+        .leftSide {
+            display: flex;
+            flex-direction: column;
+            background-color: grey;
+            #clear {
+                width: 300px;
+                background-color: darkgray;
+            }
+            .one2nine {
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .zeroAndDecimal {
+                display: flex;
+                #zero {
+                    width: 200px;
+                }
+            }
+        }
+        .operators {
+            background-color: orange;
+
+        }
+        .pad {
+            cursor: pointer;
+            font-size: 28px;
+            color: white;
+            width: 100px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &:hover {
+                opacity: 0.3;
+            }
+        }
+    }
+    // .digitsContainer, .operators, .other {
+    //     display: flex;
+    //     flex-wrap: wrap;
+    //     margin-top: 20px;
+        
+    // }
+}
+
+
+
